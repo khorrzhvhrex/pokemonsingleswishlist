@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171c2a">
+  <title>Pokémon Singles Wishlist</title>
+  <style>
+    /* =======================================================================
+       POKÉMON SINGLES WISHLIST — PUBLIC UI (v0.1)
+       Sections: tokens, layout, controls, cards, feedback, responsive rules.
+       Standalone Apps Script HTML-service template. No external JS frameworks.
+       ======================================================================= */
+
+    /* ----- 01. COLOR / TYPOGRAPHY TOKENS ---------------------------------- */
+    :root {
+      color-scheme: light;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --ink: #1d2636;
+      --muted: #687489;
+      --page: #f2f5fa;
+      --panel: #ffffff;
+      --line: #dce4ee;
+      --navy: #171c2a;
+      --accent: #3363db;
+      --accent-hover: #254fbe;
+      --shadow: 0 8px 26px rgba(16, 32, 60, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--page); }
+    a { color: inherit; }
+    button, input, select { font: inherit; }
+
+    /* ----- 02. HEADER / PAGE SHELL ---------------------------------------- */
+    .hero { background: var(--navy); color: #fff; padding: 34px 20px 30px; }
+    .hero-inner, .page { max-width: 1160px; margin: 0 auto; }
+    .eyebrow { color: #aabef6; text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; font-weight: 800; }
+    h1 { margin: 8px 0 9px; font-size: clamp(27px, 4.8vw, 42px); line-height: 1.08; letter-spacing: -0.04em; }
+    .hero-description { color: #c9d3e5; max-width: 700px; margin: 0; line-height: 1.6; font-size: 14px; }
+    .page { padding: 24px 20px 54px; }
+    .toolbar { background: var(--panel); border: 1px solid var(--line); box-shadow: var(--shadow); border-radius: 16px; padding: 14px; display: grid; grid-template-columns: minmax(180px, 1fr) auto auto auto; gap: 10px; align-items: center; }
+    .search-field, select, .refresh { border: 1px solid var(--line); background: #fff; border-radius: 10px; height: 43px; padding: 0 12px; outline-color: var(--accent); min-width: 0; }
+    .search-field { width: 100%; }
+    select { color: var(--ink); cursor: pointer; max-width: 240px; }
+    .refresh { cursor: pointer; color: var(--accent); font-weight: 700; white-space: nowrap; }
+    .refresh:hover { background: #f4f7ff; }
+    .refresh:disabled { opacity: 0.5; cursor: wait; }
+    .results-line { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 19px 2px 17px; color: var(--muted); font-size: 13px; }
+    .results-line strong { color: var(--ink); }
+
+    /* ----- 03. CARD GALLERY ------------------------------------------------ */
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(168px, 1fr)); gap: 17px; }
+    .card { min-width: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+    .card-link { display: block; padding: 15px 15px 7px; text-decoration: none; outline-offset: -3px; }
+    .card-link:hover .card-image { transform: translateY(-3px) scale(1.016); }
+    .card-image { display: block; width: 100%; aspect-ratio: 0.716; object-fit: contain; border-radius: 7px; transition: transform 0.16s ease; background: #f2f5fa; }
+    .image-placeholder { display: grid; place-items: center; width: 100%; aspect-ratio: 0.716; background: linear-gradient(140deg, #e9edf5, #f8f9fc); color: #8290a5; border-radius: 8px; font-size: 13px; text-align: center; padding: 12px; }
+    .card-body { padding: 8px 14px 15px; display: flex; flex-direction: column; flex: 1; }
+    .subset { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 800; line-height: 1.45; }
+    .card-name { margin: 5px 0 3px; font-weight: 750; font-size: 15px; line-height: 1.25; min-height: 37px; overflow-wrap: anywhere; }
+    .card-num { color: var(--muted); font-size: 12px; }
+    .card-bottom { margin-top: auto; padding-top: 14px; }
+    .market-label { color: var(--muted); font-size: 10px; letter-spacing: 0.04em; text-transform: uppercase; font-weight: 750; }
+    .price { font-size: 22px; font-weight: 850; letter-spacing: -0.04em; margin: 3px 0 12px; font-variant-numeric: tabular-nums; }
+    .price.unavailable { font-size: 15px; color: var(--muted); font-weight: 600; margin-top: 9px; margin-bottom: 16px; }
+    .shop-link { display: block; background: var(--accent); color: white; border-radius: 9px; text-decoration: none; font-size: 13px; font-weight: 750; padding: 11px 9px; text-align: center; }
+    .shop-link:hover, .shop-link:focus-visible { background: var(--accent-hover); }
+
+    /* ----- 04. EMPTY / ERROR / FOOTER ------------------------------------- */
+    .message { background: white; border: 1px solid var(--line); border-radius: 14px; padding: 38px 22px; text-align: center; color: var(--muted); }
+    .message strong { display: block; margin-bottom: 8px; color: var(--ink); font-size: 18px; }
+    .hidden { display: none !important; }
+    .footer { color: var(--muted); font-size: 12px; line-height: 1.7; text-align: center; margin-top: 36px; }
+    .footer a { color: var(--accent); }
+
+    /* ----- 05. RESPONSIVE RULES ------------------------------------------- */
+    @media (max-width: 760px) {
+      .toolbar { grid-template-columns: 1fr 1fr; }
+      .search-field { grid-column: 1 / -1; }
+      .refresh { grid-column: 2; }
+      .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+      .card-link { padding: 11px 11px 4px; }
+      .card-body { padding: 7px 11px 12px; }
+      .price { font-size: 20px; }
+    }
+    @media (max-width: 380px) {
+      .toolbar { grid-template-columns: 1fr; }
+      .search-field, .refresh { grid-column: 1; }
+      select { max-width: none; }
+      .card-name { font-size: 14px; }
+      .card-grid { gap: 9px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .card-image { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Collector's Wishlist</div>
+      <h1>Pokémon Singles</h1>
+      <p class="hero-description">Cards I'm still hunting. Tap any card to find matching eBay listings. Items I'm actively bidding on or have already ordered are automatically hidden.</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="toolbar" aria-label="Wishlist filters">
+      <input id="search" class="search-field" type="search" placeholder="Search Pokémon or card number…" aria-label="Search cards" autocomplete="off">
+      <select id="subset" aria-label="Filter by collection"><option value="">All collections</option></select>
+      <select id="sort" aria-label="Sort cards">
+        <option value="default">Sheet order</option>
+        <option value="price-low">Price: low to high</option>
+        <option value="price-high">Price: high to low</option>
+        <option value="name">Name: A to Z</option>
+      </select>
+      <button id="refresh" class="refresh" type="button" title="Get the latest wishlist from the tracker">↻ Refresh</button>
+    </section>
+
+    <div class="results-line" aria-live="polite">
+      <span id="count">Loading wishlist…</span>
+      <span id="freshness"></span>
+    </div>
+    <div id="message" class="message"><strong>Fetching the collection…</strong>Reading the latest wishlist.</div>
+    <section id="cards" class="card-grid hidden" aria-label="Available Pokémon cards"></section>
+    <div class="footer">
+      Prices are estimates from TCGplayer market data, not guaranteed purchase prices. eBay listings and shipping vary.<br>
+      This is a personal wishlist, not an online store. Purchased a gift? Please let the list owner know so it can be marked as acquired.
+    </div>
+  </main>
+
+  <script>
+    /* ----- 06. CLIENT STATE / DOM ----------------------------------------- */
+    'use strict';
+    const state = { cards: [], loading: false, loaded: false };
+    const el = {
+      search: document.getElementById('search'),
+      subset: document.getElementById('subset'),
+      sort: document.getElementById('sort'),
+      refresh: document.getElementById('refresh'),
+      count: document.getElementById('count'),
+      freshness: document.getElementById('freshness'),
+      message: document.getElementById('message'),
+      cards: document.getElementById('cards')
+    };
+    const dollars = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    /* ----- 07. DATA LOADING / ERROR HANDLING ------------------------------- */
+    /** Load a publicly published JSON snapshot, not a Google web app. */
+    async function loadWishlist() {
+      if (state.loading) return;
+      state.loading = true;
+      el.refresh.disabled = true;
+      el.count.textContent = 'Loading wishlist…';
+      if (!state.loaded) showMessage('Fetching the collection…', 'Reading the latest published wishlist.');
+      try {
+        const response = await fetch('./cards.json', {cache: 'no-store'});
+        if (!response.ok) throw new Error('Snapshot HTTP ' + response.status);
+        const data = await response.json();
+        if (!data || !Array.isArray(data.cards)) throw new Error('Malformed snapshot');
+        if (!data.publishedAt) {
+          state.loading = false;
+          el.refresh.disabled = false;
+          el.count.textContent = 'Publishing in progress';
+          showMessage('Collection being connected', 'The gallery is ready. Its first spreadsheet sync has not run yet.');
+          return;
+        }
+        onLoaded(data);
+      } catch (error) { onError(error); }
+    }
+    function onLoaded(response) {
+      state.cards = Array.isArray(response && response.cards) ? response.cards : [];
+      state.loaded = true;
+      state.loading = false;
+      el.refresh.disabled = false;
+      setSubsetOptions();
+      if (response && response.updatedAt) {
+        const d = new Date(response.updatedAt);
+        el.freshness.textContent = 'Synced ' + d.toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+      }
+      renderCards();
+    }
+    function onError(error) {
+      state.loading = false;
+      el.refresh.disabled = false;
+      el.count.textContent = 'Wishlist unavailable';
+      console.error('[PokemonSinglesGallery] load_failed', error);
+      showMessage('Could not load the wishlist', 'Please refresh this page and try again.');
+    }
+    function showMessage(title, detail) {
+      el.cards.classList.add('hidden');
+      el.message.classList.remove('hidden');
+      el.message.replaceChildren();
+      const strong = document.createElement('strong');
+      strong.textContent = title;
+      el.message.append(strong, document.createTextNode(detail || ''));
+    }
+
+    /* ----- 08. FILTERING AND SORTING -------------------------------------- */
+    function setSubsetOptions() {
+      const previous = el.subset.value;
+      const subsets = [...new Set(state.cards.map(card => card.subset))].sort((a, b) => a.localeCompare(b));
+      el.subset.replaceChildren(new Option('All collections', ''));
+      subsets.forEach(subset => el.subset.add(new Option(subset, subset)));
+      el.subset.value = subsets.includes(previous) ? previous : '';
+    }
+    function visibleCards() {
+      const query = el.search.value.trim().toLocaleLowerCase();
+      const subset = el.subset.value;
+      const list = state.cards.filter(card =>
+        (!subset || card.subset === subset) &&
+        (!query || [card.name, card.number, card.subset].join(' ').toLowerCase().includes(query))
+      );
+      if (el.sort.value === 'price-low') {
+        list.sort((a, b) => (a.price == null ? Infinity : a.price) - (b.price == null ? Infinity : b.price));
+      } else if (el.sort.value === 'price-high') {
+        list.sort((a, b) => (b.price == null ? -Infinity : b.price) - (a.price == null ? -Infinity : a.price));
+      } else if (el.sort.value === 'name') {
+        list.sort((a, b) => a.name.localeCompare(b.name) || a.number.localeCompare(b.number));
+      }
+      return list;
+    }
+
+    /* ----- 09. SAFE CARD RENDERING ---------------------------------------- */
+    function createText(tag, className, text) {
+      const node = document.createElement(tag);
+      node.className = className;
+      node.textContent = text;
+      return node;
+    }
+    function createImage(card) {
+      if (!card.imageUrl) return createText('div', 'image-placeholder', 'Card image unavailable');
+      const img = document.createElement('img');
+      img.className = 'card-image';
+      img.alt = card.name + ', card ' + card.number;
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      img.src = card.imageUrl;
+      let triedFallback = false;
+      img.onerror = function () {
+        if (!triedFallback && card.imageFallbackUrl) {
+          triedFallback = true;
+          img.src = card.imageFallbackUrl;
+        } else {
+          img.replaceWith(createText('div', 'image-placeholder', 'Card image unavailable'));
+        }
+      };
+      return img;
+    }
+    function renderCards() {
+      if (!state.loaded) return;
+      const list = visibleCards();
+      el.count.innerHTML = '<strong>' + list.length + '</strong> of ' + state.cards.length + ' cards';
+      if (!list.length) {
+        showMessage('No matching cards', 'Try a different collection or search term.');
+        return;
+      }
+      el.message.classList.add('hidden');
+      el.cards.classList.remove('hidden');
+      const fragment = document.createDocumentFragment();
+      for (const card of list) {
+        const tile = document.createElement('article');
+        tile.className = 'card';
+
+        const coverLink = document.createElement('a');
+        coverLink.className = 'card-link';
+        coverLink.href = card.ebayUrl;
+        coverLink.target = '_blank';
+        coverLink.rel = 'noopener noreferrer';
+        coverLink.title = 'Search eBay for ' + card.name;
+        coverLink.append(createImage(card));
+        tile.append(coverLink);
+
+        const body = document.createElement('div');
+        body.className = 'card-body';
+        body.append(createText('span', 'subset', card.subset));
+        body.append(createText('div', 'card-name', card.name));
+        body.append(createText('div', 'card-num', '#' + card.number));
+
+        const bottom = document.createElement('div');
+        bottom.className = 'card-bottom';
+        bottom.append(createText('div', 'market-label', 'Market estimate'));
+        const hasPrice = typeof card.price === 'number' && Number.isFinite(card.price);
+        bottom.append(createText('div', hasPrice ? 'price' : 'price unavailable', hasPrice ? dollars.format(card.price) : 'Not available'));
+        const button = document.createElement('a');
+        button.className = 'shop-link';
+        button.href = card.ebayUrl;
+        button.target = '_blank';
+        button.rel = 'noopener noreferrer';
+        button.textContent = 'Find on eBay ↗';
+        bottom.append(button);
+        body.append(bottom);
+        tile.append(body);
+        fragment.append(tile);
+      }
+      el.cards.replaceChildren(fragment);
+    }
+
+    /* ----- 10. EVENTS / STARTUP ------------------------------------------- */
+    el.search.addEventListener('input', renderCards);
+    el.subset.addEventListener('change', renderCards);
+    el.sort.addEventListener('change', renderCards);
+    el.refresh.addEventListener('click', loadWishlist);
+    loadWishlist();
+  </script>
+</body>
+</html>
