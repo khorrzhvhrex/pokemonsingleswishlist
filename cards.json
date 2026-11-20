@@ -2,6 +2,15 @@
   "cards": [
     {
       "subset": "Numbered Secret Rare",
+      "number": "130/128",
+      "name": "Moltres",
+      "price": 3.02,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716219_in_1000x1000.jpg",
+      "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716219_200w.jpg",
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=130%2F128%20Moltres%20Pokemon%2030th%20Celebration&_sop=15"
+    },
+    {
+      "subset": "Numbered Secret Rare",
       "number": "138/128",
       "name": "Lycanroc",
       "price": 0.9716,
@@ -685,8 +694,8 @@
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=110%20Umbreon%20ex%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
     }
   ],
-  "total": 76,
-  "updatedAt": "2026-11-19T19:08:27.888Z",
-  "publishedAt": "2026-11-19T19:08:28.403Z",
+  "total": 77,
+  "updatedAt": "2026-11-20T02:08:26.745Z",
+  "publishedAt": "2026-11-20T02:08:27.111Z",
   "version": "0.1.0"
 }
