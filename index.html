@@ -65,6 +65,20 @@
     .price.unavailable { font-size: 15px; color: var(--muted); font-weight: 600; margin-top: 9px; margin-bottom: 16px; }
     .shop-link { display: block; background: var(--accent); color: white; border-radius: 9px; text-decoration: none; font-size: 13px; font-weight: 750; padding: 11px 9px; text-align: center; }
     .shop-link:hover, .shop-link:focus-visible { background: var(--accent-hover); }
+    
+    /* ----- TOP PICKS / AVAILABILITY ------------------------------- */
+    .gallery-views {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 18px;}
+    .gallery-views h2 {font-size: 24px; margin: 0 0 5px;}
+    .gallery-views p {font-size: 13px; color: var(--muted); margin: 0;}
+    .view-actions {display: flex; flex-wrap: wrap; gap: 8px;}
+    .view-button {border: none; border-radius: 10px; padding: 12px 17px; background: var(--accent); color: white; font-weight: 750; cursor: pointer;}
+    .view-button:hover { background: var(--accent-hover); }
+    .card-blocked .card-image .card-blocked .image-placeholder {opacity: 0.5; filter: grayscale(35%);}
+    .card-blocked .card-link {cursor: default;}
+    .status-info {background: #edf1f7;  color: var(--ink); border-radius: 9px; font-size: 12px; line-height: 1.5;}
+    .status-info summary {padding: 11px; font-weight: 750; cursor: pointer;}
+    .status-info p {margin: 0; padding: 0 11px 12px;}
+    .status-info[open] {background: #e4ebf8;}
 
     /* ----- 04. EMPTY / ERROR / FOOTER ------------------------------------- */
     .message { background: white; border: 1px solid var(--line); border-radius: 14px; padding: 38px 22px; text-align: center; color: var(--muted); }
@@ -109,6 +123,23 @@
   </header>
 
   <main class="page">
+    
+    <!-- ----- GALLERY VIEW SELECTION ---------------------------------- -->
+    <nav class="gallery-views" aria-label="Gallery views">
+      <div>
+        <h2 id="viewTitle">Top Picks</h2>
+        <p>My personal favorites from the missing-card collection.</p>
+      </div>
+      <div class="view-actions">
+        <button id="viewTop" class="view-button hidden" type="button">
+          ← Back to Top Picks
+        </button>
+        <button id="viewAll" class="view-button" type="button">
+          View Full List →
+        </button>
+      </div>
+    </nav>
+
     <section class="toolbar" aria-label="Wishlist filters">
       <input id="search" class="search-field" type="search" placeholder="Search Pokémon or card number…" aria-label="Search cards" autocomplete="off">
       <select id="subset" aria-label="Filter by collection"><option value="">All collections</option></select>
@@ -136,12 +167,15 @@
   <script>
     /* ----- 06. CLIENT STATE / DOM ----------------------------------------- */
     'use strict';
-    const state = { cards: [], loading: false, loaded: false };
+    const state = {cards: [], loading: false, loaded: false, view: 'top'};
     const el = {
       search: document.getElementById('search'),
       subset: document.getElementById('subset'),
       sort: document.getElementById('sort'),
-      refresh: document.getElementById('refresh'),
+      refresh: document.getElementById('refresh'),      
+      viewTop: document.getElementById('viewTop'),
+      viewAll: document.getElementById('viewAll'),
+      viewTitle: document.getElementById('viewTitle'),
       count: document.getElementById('count'),
       freshness: document.getElementById('freshness'),
       message: document.getElementById('message'),
@@ -210,11 +244,13 @@
     }
     function visibleCards() {
       const query = el.search.value.trim().toLocaleLowerCase();
-      const subset = el.subset.value;
+      const subset = el.subset.value;       
       const list = state.cards.filter(card =>
+        (state.view === 'all' || card.topPick === true) &&
         (!subset || card.subset === subset) &&
         (!query || [card.name, card.number, card.subset].join(' ').toLowerCase().includes(query))
       );
+      
       if (el.sort.value === 'price-low') {
         list.sort((a, b) => (a.price == null ? Infinity : a.price) - (b.price == null ? Infinity : b.price));
       } else if (el.sort.value === 'price-high') {
@@ -266,14 +302,30 @@
         const tile = document.createElement('article');
         tile.className = 'card';
 
-        const coverLink = document.createElement('a');
-        coverLink.className = 'card-link';
-        coverLink.href = card.ebayUrl;
-        coverLink.target = '_blank';
-        coverLink.rel = 'noopener noreferrer';
-        coverLink.title = 'Search eBay for ' + card.name;
-        coverLink.append(createImage(card));
-        tile.append(coverLink);
+        const availability = card.availability || 'available';
+        const blocked = availability !== 'available';
+        const statusMessage = availability === 'ordered'
+          ? 'Secured a good deal at auction! Card is currently being processed for shipping'
+          : 'Live bid exists for this card - good vibes only!';
+
+        if (blocked) tile.classList.add('card-blocked');
+
+        // An unavailable card has no clickable eBay image.
+        const cover = document.createElement(blocked ? 'div' : 'a');
+        cover.className = 'card-link';
+
+        if (!blocked) {
+          cover.href = card.ebayUrl;
+          cover.target = '_blank';
+          cover.rel = 'noopener noreferrer';
+          cover.title = 'Search eBay for ' + card.name;
+        } else {
+          cover.title = statusMessage;
+        }
+
+        cover.append(createImage(card));
+        tile.append(cover);
+
 
         const body = document.createElement('div');
         body.className = 'card-body';
@@ -286,13 +338,32 @@
         bottom.append(createText('div', 'market-label', 'Market estimate'));
         const hasPrice = typeof card.price === 'number' && Number.isFinite(card.price);
         bottom.append(createText('div', hasPrice ? 'price' : 'price unavailable', hasPrice ? dollars.format(card.price) : 'Not available'));
-        const button = document.createElement('a');
-        button.className = 'shop-link';
-        button.href = card.ebayUrl;
-        button.target = '_blank';
-        button.rel = 'noopener noreferrer';
-        button.textContent = 'Find on eBay ↗';
-        bottom.append(button);
+        
+        if (blocked) {
+          const details = document.createElement('details');
+          details.className = 'status-info';
+          details.title = statusMessage;
+
+          const summary = document.createElement('summary');
+          summary.textContent = availability === 'ordered'
+            ? '✓ Ordered — details'
+            : '⏳ Current Bid — details';
+
+          const description = document.createElement('p');
+          description.textContent = statusMessage;
+
+          details.append(summary, description);
+          bottom.append(details);
+        } else {
+          const button = document.createElement('a');
+          button.className = 'shop-link';
+          button.href = card.ebayUrl;
+          button.target = '_blank';
+          button.rel = 'noopener noreferrer';
+          button.textContent = 'Find on eBay ↗';
+          bottom.append(button);
+        }
+
         body.append(bottom);
         tile.append(body);
         fragment.append(tile);
@@ -305,6 +376,28 @@
     el.subset.addEventListener('change', renderCards);
     el.sort.addEventListener('change', renderCards);
     el.refresh.addEventListener('click', loadWishlist);
+
+    
+    /* ----- TOP PICKS / FULL COLLECTION NAVIGATION ------------------- */
+    function setGalleryView(view) {
+      state.view = view;
+      el.viewTitle.textContent =
+        view === 'top' ? 'Top Picks' : 'Full Collection';
+
+      el.viewTop.classList.toggle('hidden', view === 'top');
+      el.viewAll.classList.toggle('hidden', view === 'all');
+
+      renderCards();
+    }
+
+    el.viewTop.addEventListener('click', function () {
+      setGalleryView('top');
+    });
+
+    el.viewAll.addEventListener('click', function () {
+      setGalleryView('all');
+    });
+
     loadWishlist();
   </script>
 </body>
