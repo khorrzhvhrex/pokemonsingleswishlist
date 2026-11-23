@@ -408,6 +408,17 @@
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=G%2FRGB%20Mew%20Pokemon%2030th%20Celebration&_sop=15"
     },
     {
+      "subset": "RGB",
+      "number": "B/RGB",
+      "name": "Mew",
+      "topPick": false,
+      "availability": "available",
+      "price": 4276.56,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/717609_in_1000x1000.jpg",
+      "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/717609_200w.jpg",
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=B%2FRGB%20Mew%20Pokemon%2030th%20Celebration&_sop=15"
+    },
+    {
       "subset": "First Partner Promo",
       "number": "037",
       "name": "Bulbasaur",
@@ -848,8 +859,8 @@
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=110%20Umbreon%20ex%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
     }
   ],
-  "total": 77,
-  "updatedAt": "2026-11-23T18:42:52.764Z",
-  "publishedAt": "2026-11-23T18:42:52.764Z",
+  "total": 78,
+  "updatedAt": "2026-11-23T18:42:55.057Z",
+  "publishedAt": "2026-11-23T18:42:55.057Z",
   "version": "3.0.0"
 }
