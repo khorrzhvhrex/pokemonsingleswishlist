@@ -4,7 +4,7 @@
       "subset": "Numbered Secret Rare",
       "number": "130/128",
       "name": "Moltres",
-      "topPick": false,
+      "topPick": true,
       "availability": "available",
       "price": 2.8588,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716219_in_1000x1000.jpg",
@@ -15,7 +15,7 @@
       "subset": "Numbered Secret Rare",
       "number": "133/128",
       "name": "Zapdos",
-      "topPick": false,
+      "topPick": true,
       "availability": "bid",
       "price": 2.44,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716221_in_1000x1000.jpg",
@@ -26,7 +26,7 @@
       "subset": "Numbered Secret Rare",
       "number": "138/128",
       "name": "Lycanroc",
-      "topPick": false,
+      "topPick": true,
       "availability": "available",
       "price": 1.03,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/696685_in_1000x1000.jpg",
@@ -860,7 +860,7 @@
     }
   ],
   "total": 78,
-  "updatedAt": "2026-11-23T15:23:26.855Z",
-  "publishedAt": "2026-11-23T15:23:27.180Z",
+  "updatedAt": "2026-11-23T15:28:42.912Z",
+  "publishedAt": "2026-11-23T15:28:43.154Z",
   "version": "0.1.0"
 }
