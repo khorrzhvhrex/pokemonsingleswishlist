@@ -192,7 +192,7 @@
       "number": "149",
       "name": "Lugia",
       "topPick": false,
-      "availability": "available",
+      "availability": "gifter-bid",
       "price": 113.26,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/714386_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/714386_200w.jpg",
@@ -860,7 +860,7 @@
     }
   ],
   "total": 78,
-  "updatedAt": "2026-11-23T17:21:20.279Z",
-  "publishedAt": "2026-11-23T17:21:20.281Z",
+  "updatedAt": "2026-11-23T17:23:23.113Z",
+  "publishedAt": "2026-11-23T17:23:23.114Z",
   "version": "0.1.0"
 }
