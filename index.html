@@ -92,6 +92,19 @@
     .view-button {border: none; border-radius: 12px; padding: 17px 25px; background: var(--accent); color: white; font-size: 16px; font-weight: 800; cursor: pointer;
       box-shadow: 0 6px 18px rgba(51, 99, 219, 0.22); transition: background 0.15s ease, transform 0.15s ease;}    
     .view-button:hover, .view-button:focus-visible {background: var(--accent-hover); transform: translateY(-2px);}
+    
+    /* ----- TOP FULL-WISHLIST BUTTON: GENTLE PULSE ------------------ */
+    .view-button.pulse-glow {animation: wishlistPulse 2.8s ease-in-out infinite;}
+    @keyframes wishlistPulse {
+      0%, 
+      100% {box-shadow: 0 4px 12px rgba(51, 99, 219, 0.20), 0 0 0 0 rgba(51, 99, 219, 0);}
+      50% {box-shadow: 0 7px 22px rgba(51, 99, 219, 0.45), 0 0 0 8px rgba(51, 99, 219, 0.12);}
+    }
+    .view-button.pulse-glow:hover, .view-button.pulse-glow:focus-visible {animation-play-state: paused; box-shadow: 0 7px 24px rgba(51, 99, 219, 0.48);}
+    @media (prefers-reduced-motion: reduce) {
+      .view-button.pulse-glow {animation: none;}
+    }
+
     /* ----- BOTTOM FULL-WISHLIST INVITATION ----------------------- */
     .full-list-invite {margin-top: 28px; padding: 30px 22px; background: white; border: 2px solid #d9e3ff; border-radius: 18px; text-align: center; box-shadow: var(--shadow);}    
     .full-list-invite h2 {margin: 0 0 8px; font-size: 24px;}    
@@ -179,7 +192,7 @@
         <button id="viewTop" class="view-button hidden" type="button">
           ← Back to Top Picks
         </button>
-        <button id="viewAll" class="view-button" type="button">
+        <button id="viewAll" class="view-button pulse-glow" type="button">
           Browse the Full Wishlist →
         </button>
       </div>
