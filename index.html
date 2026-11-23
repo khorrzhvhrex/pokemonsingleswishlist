@@ -37,6 +37,23 @@
     .eyebrow { color: #aabef6; text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; font-weight: 800; }
     h1 { margin: 8px 0 9px; font-size: clamp(27px, 4.8vw, 42px); line-height: 1.08; letter-spacing: -0.04em; }
     .hero-description { color: #c9d3e5; max-width: 700px; margin: 0; line-height: 1.6; font-size: 14px; }
+    
+    /* ----- GIFT COORDINATION HEADER ACTION ------------------------------- */
+    .hero-inner {display: flex; align-items: flex-start; justify-content: space-between; gap: 32px;}
+    .hero-copy {flex: 1; min-width: 0;}
+    .gift-action {flex: 0 0 270px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; padding: 25px 20px; margin-top: 14px; background: #4f55df; color: #ffffff;
+      border: 1px solid #8188ff; border-radius: 16px; text-decoration: none; text-align: center; box-shadow: 0 8px 24px rgba(0,0,0,0.2); transition: background 0.15s, transform 0.15s;}
+    .gift-action:hover, .gift-action:focus-visible {background: #656af0; transform: translateY(-2px);}
+    .gift-action-icon { font-size: 34px; }
+    .gift-action-title { font-size: 19px; font-weight: 800; }
+    .gift-action-subtitle { font-size: 12px; opacity: 0.88; }
+    @media (max-width: 760px) {
+      .hero-inner { flex-direction: column; gap: 20px; }
+      .gift-action {flex: none; width: 100%; margin-top: 0; padding: 19px;}
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .gift-action { transition: none; }
+    }
     .page { padding: 24px 20px 54px; }
     .toolbar { background: var(--panel); border: 1px solid var(--line); box-shadow: var(--shadow); border-radius: 16px; padding: 14px; display: grid; grid-template-columns: minmax(180px, 1fr) auto auto auto; gap: 10px; align-items: center; }
     .search-field, select, .refresh { border: 1px solid var(--line); background: #fff; border-radius: 10px; height: 43px; padding: 0 12px; outline-color: var(--accent); min-width: 0; }
@@ -112,17 +129,33 @@
 <body>
   <header class="hero">
     <div class="hero-inner">
-      <div class="eyebrow">Collector's Wishlist</div>
+      <div class="hero-copy">
+        <div class="eyebrow">Collector's Wishlist</div>
       <h1>Pokémon Singles</h1>
       <p class="hero-description">All listings are cards I am missing from my master set of 30th Celebration. <br>
         I generated it from a spreadsheet of all missing cards, so ignore the listings that are absurdly highly-valued. <br>
         Prices listed are a market estimate. eBay listings for most of the lower value cards will start a bit higher than that. <br>
         My general philsophy with this set has been $3 max for cards valued less than $3. <br>
         I haven't pulled the trigger on anything over $5 <br>
-        Finally, English language is preferred, BUT... <br>
+        Finally, English language is preferred, BUT... <br>        
         If you stumble across a listing in Japanese that is remarkably cheaper, that's fine.</p>
-    </div>
-  </header>
+              </div>
+        
+              <!-- Gift Coordination: Public Response Form -->
+              <a
+                class="gift-action"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeNyz5mhizqpWnH51m1yZ7WK1SB8s1OQa4gsSYe_y3-HOngLA/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Report a Pokémon gift or bid using the gift coordination form"
+              >
+                <span class="gift-action-icon" aria-hidden="true">🎁</span>
+                <span class="gift-action-title">Report a Gift or Bid</span>
+                <span class="gift-action-subtitle">Help prevent duplicate purchases</span>
+              </a>
+            </div>
+          </header>
+
 
   <main class="page">
     
@@ -306,9 +339,14 @@
 
         const availability = card.availability || 'available';
         const blocked = availability !== 'available';
-        const statusMessage = availability === 'ordered'
-          ? 'Secured a good deal at auction! Card is currently being processed for shipping'
-          : 'Live bid exists for this card - good vibes only!';
+        const statusMessages = {
+          ordered: 'Secured a deal at auction! Card is processing/shipping',
+          bid: 'Live bid exists for this card - good vibes only!',
+          'gifter-bid': 'Gifter has active bid for this card',
+          'gifter-purchased': 'Gifter has confirmed purchase for this card'
+        };
+        
+        const statusMessage = statusMessages[availability] || '';
 
         if (blocked) tile.classList.add('card-blocked');
 
@@ -347,9 +385,14 @@
           details.title = statusMessage;
 
           const summary = document.createElement('summary');
-          summary.textContent = availability === 'ordered'
-            ? '✓ Ordered — details'
-            : '⏳ Current Bid — details';
+          const statusLabels = {
+            ordered: '✓ Ordered — details',
+            bid: '⏳ Current Bid — details',
+            'gifter-bid': '⏳ Gifter Bid — details',
+            'gifter-purchased': '🎁 Gifter Purchase — details'
+          };
+          
+          summary.textContent = statusLabels[availability] || 'Unavailable — details';
 
           const description = document.createElement('p');
           description.textContent = statusMessage;
