@@ -88,8 +88,18 @@
     .gallery-views h2 {font-size: 24px; margin: 0 0 5px;}
     .gallery-views p {font-size: 13px; color: var(--muted); margin: 0;}
     .view-actions {display: flex; flex-wrap: wrap; gap: 8px;}
-    .view-button {border: none; border-radius: 10px; padding: 12px 17px; background: var(--accent); color: white; font-weight: 750; cursor: pointer;}
-    .view-button:hover { background: var(--accent-hover); }
+    /* ----- PRIMARY GALLERY NAVIGATION ----------------------------- */
+    .view-button {border: none; border-radius: 12px; padding: 17px 25px; background: var(--accent); color: white; font-size: 16px; font-weight: 800; cursor: pointer;
+      box-shadow: 0 6px 18px rgba(51, 99, 219, 0.22); transition: background 0.15s ease, transform 0.15s ease;}    
+    .view-button:hover, .view-button:focus-visible {background: var(--accent-hover); transform: translateY(-2px);}
+    /* ----- BOTTOM FULL-WISHLIST INVITATION ----------------------- */
+    .full-list-invite {margin-top: 28px; padding: 30px 22px; background: white; border: 2px solid #d9e3ff; border-radius: 18px; text-align: center; box-shadow: var(--shadow);}    
+    .full-list-invite h2 {margin: 0 0 8px; font-size: 24px;}    
+    .full-list-invite p {color: var(--muted); font-size: 14px; line-height: 1.6; margin: 0 auto 20px; max-width: 440px;}    
+    .full-list-invite .view-button {width: min(100%, 380px);}
+    @media (max-width: 760px) {
+      .view-actions, .view-button {width: 100%;}
+    }
     .card-blocked .card-image .card-blocked .image-placeholder {opacity: 0.5; filter: grayscale(35%);}
     .card-blocked .card-link {cursor: default;}
     .status-info {background: #edf1f7;  color: var(--ink); border-radius: 9px; font-size: 12px; line-height: 1.5;}
@@ -170,7 +180,7 @@
           ← Back to Top Picks
         </button>
         <button id="viewAll" class="view-button" type="button">
-          View Full List →
+          Browse the Full Wishlist →
         </button>
       </div>
     </nav>
@@ -193,6 +203,19 @@
     </div>
     <div id="message" class="message"><strong>Fetching the collection…</strong>Reading the latest wishlist.</div>
     <section id="cards" class="card-grid hidden" aria-label="Available Pokémon cards"></section>
+    
+    <!-- ----- FULL WISHLIST INVITATION ----------------------------- -->
+    <section id="fullListInvite" class="full-list-invite">
+      <h2>There's more to explore!</h2>
+      <p>
+        These are just a few favorites.
+        Browse the entire collection of missing Pokémon cards.
+      </p>
+      <button id="viewAllBottom" class="view-button" type="button">
+        Browse the Full Wishlist →
+      </button>
+    </section>
+
     <div class="footer">
       Prices are estimates from TCGplayer market data, not guaranteed purchase prices. eBay listings and shipping vary.<br>
       This is a personal wishlist, not an online store. Purchased a gift? Please submit a bid/purchase form via the button at the top of this page.
@@ -211,6 +234,8 @@
       viewTop: document.getElementById('viewTop'),
       viewAll: document.getElementById('viewAll'),
       viewTitle: document.getElementById('viewTitle'),
+      viewAllBottom: document.getElementById('viewAllBottom'),
+      fullListInvite: document.getElementById('fullListInvite'),
       count: document.getElementById('count'),
       freshness: document.getElementById('freshness'),
       message: document.getElementById('message'),
@@ -431,7 +456,8 @@
 
       el.viewTop.classList.toggle('hidden', view === 'top');
       el.viewAll.classList.toggle('hidden', view === 'all');
-
+      el.fullListInvite.classList.toggle('hidden', view === 'all');
+      
       renderCards();
     }
 
@@ -442,6 +468,18 @@
     el.viewAll.addEventListener('click', function () {
       setGalleryView('all');
     });
+
+    
+    el.viewAllBottom.addEventListener('click', function () {
+      setGalleryView('all');
+
+      // Return to the beginning of the newly displayed collection.
+      document.querySelector('.gallery-views').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+
 
     loadWishlist();
   </script>
