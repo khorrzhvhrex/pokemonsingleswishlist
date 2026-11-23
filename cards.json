@@ -390,7 +390,7 @@
       "number": "R/RGB",
       "name": "Mew",
       "topPick": false,
-      "availability": "gifter-purchased",
+      "availability": "available",
       "price": 4316.56,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/717607_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/717607_200w.jpg",
@@ -849,7 +849,7 @@
     }
   ],
   "total": 77,
-  "updatedAt": "2026-11-23T18:42:39.928Z",
-  "publishedAt": "2026-11-23T18:42:39.929Z",
+  "updatedAt": "2026-11-23T18:42:52.764Z",
+  "publishedAt": "2026-11-23T18:42:52.764Z",
   "version": "3.0.0"
 }
