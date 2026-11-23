@@ -398,6 +398,17 @@
     },
     {
       "subset": "RGB",
+      "number": "G/RGB",
+      "name": "Mew",
+      "topPick": false,
+      "availability": "available",
+      "price": 3391.24,
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/717608_in_1000x1000.jpg",
+      "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/717608_200w.jpg",
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=G%2FRGB%20Mew%20Pokemon%2030th%20Celebration&_sop=15"
+    },
+    {
+      "subset": "RGB",
       "number": "B/RGB",
       "name": "Mew",
       "topPick": false,
@@ -848,8 +859,8 @@
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=110%20Umbreon%20ex%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
     }
   ],
-  "total": 77,
-  "updatedAt": "2026-11-23T18:30:18.779Z",
-  "publishedAt": "2026-11-23T18:30:18.779Z",
-  "version": "0.1.0"
+  "total": 78,
+  "updatedAt": "2026-11-23T18:35:20.849Z",
+  "publishedAt": "2026-11-23T18:35:20.849Z",
+  "version": "3.0.0"
 }
