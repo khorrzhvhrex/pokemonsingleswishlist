@@ -6,7 +6,7 @@
       "name": "Moltres",
       "topPick": true,
       "availability": "available",
-      "price": 2.48,
+      "price": 2.6876,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716219_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716219_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=130%2F128%20Moltres%20Pokemon%2030th%20Celebration&_sop=15"
@@ -17,7 +17,7 @@
       "name": "Zapdos",
       "topPick": true,
       "availability": "available",
-      "price": 2.29,
+      "price": 2.2224,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716221_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716221_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=133%2F128%20Zapdos%20Pokemon%2030th%20Celebration&_sop=15"
@@ -28,7 +28,7 @@
       "name": "Lycanroc",
       "topPick": true,
       "availability": "available",
-      "price": 0.96,
+      "price": 0.9,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/696685_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/696685_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=138%2F128%20Lycanroc%20Pokemon%2030th%20Celebration&_sop=15"
@@ -39,7 +39,7 @@
       "name": "Galarian Meowth",
       "topPick": false,
       "availability": "ordered",
-      "price": 2.4092,
+      "price": 2.81,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716226_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716226_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=141%2F128%20Galarian%20Meowth%20Pokemon%2030th%20Celebration&_sop=15"
@@ -50,7 +50,7 @@
       "name": "Fuecoco ex",
       "topPick": false,
       "availability": "available",
-      "price": 9.37,
+      "price": 9.83,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716229_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716229_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=147%2F128%20Fuecoco%20ex%20Pokemon%2030th%20Celebration&_sop=15"
@@ -61,7 +61,7 @@
       "name": "Pikachu ex (Day)",
       "topPick": true,
       "availability": "available",
-      "price": 33.32,
+      "price": 33.3,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/712953_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/712953_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=149%2F128%20Pikachu%20ex%20(Day)%20Pokemon%2030th%20Celebration&_sop=15"
@@ -72,7 +72,7 @@
       "name": "Mewtwo ex",
       "topPick": true,
       "availability": "available",
-      "price": 32.33,
+      "price": 31.19,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/717603_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/717603_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=151%2F128%20Mewtwo%20ex%20Pokemon%2030th%20Celebration&_sop=15"
@@ -83,7 +83,7 @@
       "name": "Mew ex",
       "topPick": true,
       "availability": "available",
-      "price": 58.21,
+      "price": 57.89,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/717605_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/717605_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=152%2F128%20Mew%20ex%20Pokemon%2030th%20Celebration&_sop=15"
@@ -94,7 +94,7 @@
       "name": "Sylveon ex",
       "topPick": false,
       "availability": "available",
-      "price": 30.8908,
+      "price": 31.5928,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716231_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716231_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=153%2F128%20Sylveon%20ex%20Pokemon%2030th%20Celebration&_sop=15"
@@ -105,7 +105,7 @@
       "name": "Jirachi ex",
       "topPick": false,
       "availability": "available",
-      "price": 27.5612,
+      "price": 26.65,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716232_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716232_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=155%2F128%20Jirachi%20ex%20Pokemon%2030th%20Celebration&_sop=15"
@@ -116,7 +116,7 @@
       "name": "Salamence ex",
       "topPick": false,
       "availability": "available",
-      "price": 9.24,
+      "price": 9.15,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716233_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716233_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=156%2F128%20Salamence%20ex%20Pokemon%2030th%20Celebration&_sop=15"
@@ -127,7 +127,7 @@
       "name": "Mew ex",
       "topPick": true,
       "availability": "available",
-      "price": 30.752,
+      "price": 30.75,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/696688_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/696688_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=158%2F128%20Mew%20ex%20Pokemon%2030th%20Celebration&_sop=15"
@@ -138,7 +138,7 @@
       "name": "Charizard",
       "topPick": false,
       "availability": "available",
-      "price": 105.54,
+      "price": 105.73,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/714372_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/714372_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=004%20Charizard%2030th%20Classic%20Collection&_sop=15"
@@ -149,7 +149,7 @@
       "name": "Misty",
       "topPick": false,
       "availability": "available",
-      "price": 3.08,
+      "price": 3.38,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716159_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716159_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=018%20Misty%2030th%20Classic%20Collection&_sop=15"
@@ -160,7 +160,7 @@
       "name": "Erika’s Jigglypuff",
       "topPick": false,
       "availability": "available",
-      "price": 5.58,
+      "price": 5.1,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716195_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716195_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=069%20Erika%E2%80%99s%20Jigglypuff%2030th%20Classic%20Collection&_sop=15"
@@ -171,7 +171,7 @@
       "name": "Sneasel",
       "topPick": false,
       "availability": "available",
-      "price": 2.11,
+      "price": 1.91,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716161_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716161_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=025%20Sneasel%2030th%20Classic%20Collection&_sop=15"
@@ -182,7 +182,7 @@
       "name": "Shining Celebi",
       "topPick": false,
       "availability": "available",
-      "price": 13.0556,
+      "price": 13.24,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716205_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716205_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=106%20Shining%20Celebi%2030th%20Classic%20Collection&_sop=15"
@@ -193,7 +193,7 @@
       "name": "Lugia",
       "topPick": false,
       "availability": "available",
-      "price": 115.94,
+      "price": 119.71,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/714386_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/714386_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=149%20Lugia%2030th%20Classic%20Collection&_sop=15"
@@ -204,7 +204,7 @@
       "name": "Delcatty",
       "topPick": false,
       "availability": "available",
-      "price": 2.49,
+      "price": 2.62,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716156_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716156_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=005%20Delcatty%2030th%20Classic%20Collection&_sop=15"
@@ -215,7 +215,7 @@
       "name": "Dark Tyranitar",
       "topPick": false,
       "availability": "available",
-      "price": 5.94,
+      "price": 6.48,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716160_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716160_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=019%20Dark%20Tyranitar%2030th%20Classic%20Collection&_sop=15"
@@ -226,7 +226,7 @@
       "name": "Metagross δ",
       "topPick": true,
       "availability": "available",
-      "price": 3.52,
+      "price": 3.69,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716157_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716157_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=011%20Metagross%20%CE%B4%2030th%20Classic%20Collection&_sop=15"
@@ -248,7 +248,7 @@
       "name": "Crobat δ",
       "topPick": true,
       "availability": "available",
-      "price": 2.63,
+      "price": 2.76,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716191_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716191_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=047%20Crobat%20%CE%B4%2030th%20Classic%20Collection&_sop=15"
@@ -259,7 +259,7 @@
       "name": "Darkrai & Cresselia LEGEND (upper)",
       "topPick": false,
       "availability": "available",
-      "price": 12.99,
+      "price": 13.21,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716199_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716199_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=099%20Darkrai%20%26%20Cresselia%20LEGEND%20(upper)%2030th%20Classic%20Collection&_sop=15"
@@ -270,7 +270,7 @@
       "name": "Darkrai & Cresselia LEGEND (lower)",
       "topPick": false,
       "availability": "available",
-      "price": 12.71,
+      "price": 12.86,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716200_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716200_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=100%20Darkrai%20%26%20Cresselia%20LEGEND%20(lower)%2030th%20Classic%20Collection&_sop=15"
@@ -281,7 +281,7 @@
       "name": "N",
       "topPick": false,
       "availability": "available",
-      "price": 8.41,
+      "price": 8.27,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716202_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716202_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=101%20N%2030th%20Classic%20Collection&_sop=15"
@@ -292,7 +292,7 @@
       "name": "Genesect-EX",
       "topPick": false,
       "availability": "available",
-      "price": 5.4,
+      "price": 4.97,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716158_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716158_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=011%20Genesect-EX%2030th%20Classic%20Collection&_sop=15"
@@ -303,7 +303,7 @@
       "name": "M Gardevoir-EX",
       "topPick": false,
       "availability": "available",
-      "price": 8.58,
+      "price": 8.65,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716204_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716204_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=106%20M%20Gardevoir-EX%2030th%20Classic%20Collection&_sop=15"
@@ -314,7 +314,7 @@
       "name": "Greninja BREAK",
       "topPick": false,
       "availability": "available",
-      "price": 6.83,
+      "price": 6.73,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716162_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716162_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=041%20Greninja%20BREAK%2030th%20Classic%20Collection&_sop=15"
@@ -325,7 +325,7 @@
       "name": "Pikachu & Zekrom-GX",
       "topPick": false,
       "availability": "available",
-      "price": 19.2056,
+      "price": 18.7,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/714373_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/714373_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=033%20Pikachu%20%26%20Zekrom-GX%2030th%20Classic%20Collection&_sop=15"
@@ -336,7 +336,7 @@
       "name": "Zacian V",
       "topPick": false,
       "availability": "available",
-      "price": 4.87,
+      "price": 5.03,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716209_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716209_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=138%20Zacian%20V%2030th%20Classic%20Collection&_sop=15"
@@ -347,7 +347,7 @@
       "name": "Raikou",
       "topPick": false,
       "availability": "available",
-      "price": 7.06,
+      "price": 6.92,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716192_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716192_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=050%20Raikou%2030th%20Classic%20Collection&_sop=15"
@@ -358,7 +358,7 @@
       "name": "Mew VMAX",
       "topPick": false,
       "availability": "available",
-      "price": 15.68,
+      "price": 15.92,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716207_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716207_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=114%20Mew%20VMAX%2030th%20Classic%20Collection&_sop=15"
@@ -369,7 +369,7 @@
       "name": "Arceus VSTAR",
       "topPick": false,
       "availability": "available",
-      "price": 5.91,
+      "price": 6.11,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716208_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716208_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=123%20Arceus%20VSTAR%2030th%20Classic%20Collection&_sop=15"
@@ -380,7 +380,7 @@
       "name": "Magikarp",
       "topPick": false,
       "availability": "available",
-      "price": 59.17,
+      "price": 58.94,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716210_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716210_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=203%20Magikarp%2030th%20Classic%20Collection&_sop=15"
@@ -402,7 +402,7 @@
       "name": "Mew",
       "topPick": false,
       "availability": "available",
-      "price": 3391.24,
+      "price": 3127.49,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/717608_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/717608_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=G%2FRGB%20Mew%20Pokemon%2030th%20Celebration&_sop=15"
@@ -424,7 +424,7 @@
       "name": "Bulbasaur",
       "topPick": false,
       "availability": "available",
-      "price": 18.08,
+      "price": 18.09,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684461_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684461_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=037%20Bulbasaur%20Mega%20Evolution%20Promo&_sop=15"
@@ -435,7 +435,7 @@
       "name": "Charmander",
       "topPick": false,
       "availability": "available",
-      "price": 21.95,
+      "price": 21.9,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684462_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684462_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=038%20Charmander%20Mega%20Evolution%20Promo&_sop=15"
@@ -446,7 +446,7 @@
       "name": "Squirtle",
       "topPick": false,
       "availability": "available",
-      "price": 20.92,
+      "price": 21.05,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684463_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684463_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=039%20Squirtle%20Mega%20Evolution%20Promo&_sop=15"
@@ -457,7 +457,7 @@
       "name": "Turtwig",
       "topPick": false,
       "availability": "available",
-      "price": 5.27,
+      "price": 5.02,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684464_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684464_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=040%20Turtwig%20Mega%20Evolution%20Promo&_sop=15"
@@ -468,7 +468,7 @@
       "name": "Chimchar",
       "topPick": false,
       "availability": "available",
-      "price": 5.65,
+      "price": 5.57,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684465_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684465_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=041%20Chimchar%20Mega%20Evolution%20Promo&_sop=15"
@@ -479,7 +479,7 @@
       "name": "Piplup",
       "topPick": false,
       "availability": "available",
-      "price": 9.39,
+      "price": 9.31,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684466_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684466_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=042%20Piplup%20Mega%20Evolution%20Promo&_sop=15"
@@ -490,7 +490,7 @@
       "name": "Rowlet",
       "topPick": false,
       "availability": "available",
-      "price": 5.34,
+      "price": 5.26,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684467_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684467_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=043%20Rowlet%20Mega%20Evolution%20Promo&_sop=15"
@@ -501,7 +501,7 @@
       "name": "Litten",
       "topPick": false,
       "availability": "available",
-      "price": 6.49,
+      "price": 6.11,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684468_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684468_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=044%20Litten%20Mega%20Evolution%20Promo&_sop=15"
@@ -512,7 +512,7 @@
       "name": "Popplio",
       "topPick": false,
       "availability": "available",
-      "price": 4.91,
+      "price": 4.71,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684469_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/684469_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=045%20Popplio%20Mega%20Evolution%20Promo&_sop=15"
@@ -523,7 +523,7 @@
       "name": "Chikorita",
       "topPick": false,
       "availability": "available",
-      "price": 5.89,
+      "price": 5.17,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699870_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699870_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=046%20Chikorita%20Mega%20Evolution%20Promo&_sop=15"
@@ -534,7 +534,7 @@
       "name": "Cyndaquil",
       "topPick": false,
       "availability": "available",
-      "price": 5.89,
+      "price": 5.86,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699871_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699871_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=047%20Cyndaquil%20Mega%20Evolution%20Promo&_sop=15"
@@ -545,7 +545,7 @@
       "name": "Totodile",
       "topPick": false,
       "availability": "available",
-      "price": 6.3312,
+      "price": 6.36,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699872_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699872_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=048%20Totodile%20Mega%20Evolution%20Promo&_sop=15"
@@ -556,7 +556,7 @@
       "name": "Snivy",
       "topPick": false,
       "availability": "available",
-      "price": 2.96,
+      "price": 2.84,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699873_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699873_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=049%20Snivy%20Mega%20Evolution%20Promo&_sop=15"
@@ -567,7 +567,7 @@
       "name": "Tepig",
       "topPick": false,
       "availability": "available",
-      "price": 2.674,
+      "price": 2.69,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699874_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699874_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=050%20Tepig%20Mega%20Evolution%20Promo&_sop=15"
@@ -578,7 +578,7 @@
       "name": "Oshawott",
       "topPick": false,
       "availability": "available",
-      "price": 4.73,
+      "price": 4.77,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699875_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699875_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=051%20Oshawott%20Mega%20Evolution%20Promo&_sop=15"
@@ -589,7 +589,7 @@
       "name": "Grookey",
       "topPick": false,
       "availability": "available",
-      "price": 2.9452,
+      "price": 2.99,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699876_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699876_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=052%20Grookey%20Mega%20Evolution%20Promo&_sop=15"
@@ -600,7 +600,7 @@
       "name": "Scorbunny",
       "topPick": false,
       "availability": "available",
-      "price": 3.1,
+      "price": 3.25,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699877_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699877_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=053%20Scorbunny%20Mega%20Evolution%20Promo&_sop=15"
@@ -611,7 +611,7 @@
       "name": "Sobble",
       "topPick": false,
       "availability": "available",
-      "price": 2.37,
+      "price": 2.46,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699878_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/699878_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=054%20Sobble%20Mega%20Evolution%20Promo&_sop=15"
@@ -622,7 +622,7 @@
       "name": "Treecko",
       "topPick": false,
       "availability": "available",
-      "price": 4.64,
+      "price": 4.6,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709969_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709969_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=055%20Treecko%20Mega%20Evolution%20Promo&_sop=15"
@@ -633,7 +633,7 @@
       "name": "Torchic",
       "topPick": false,
       "availability": "available",
-      "price": 5.17,
+      "price": 4.82,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709970_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709970_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=056%20Torchic%20Mega%20Evolution%20Promo&_sop=15"
@@ -644,7 +644,7 @@
       "name": "Mudkip",
       "topPick": false,
       "availability": "available",
-      "price": 9.81,
+      "price": 9.33,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709971_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709971_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=057%20Mudkip%20Mega%20Evolution%20Promo&_sop=15"
@@ -655,7 +655,7 @@
       "name": "Chespin",
       "topPick": false,
       "availability": "available",
-      "price": 2.09,
+      "price": 2.01,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709972_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709972_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=058%20Chespin%20Mega%20Evolution%20Promo&_sop=15"
@@ -666,7 +666,7 @@
       "name": "Fennekin",
       "topPick": false,
       "availability": "available",
-      "price": 2.49,
+      "price": 2.54,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709973_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709973_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=059%20Fennekin%20Mega%20Evolution%20Promo&_sop=15"
@@ -677,7 +677,7 @@
       "name": "Froakie",
       "topPick": false,
       "availability": "available",
-      "price": 3.52,
+      "price": 3.29,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709974_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709974_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=060%20Froakie%20Mega%20Evolution%20Promo&_sop=15"
@@ -688,7 +688,7 @@
       "name": "Sprigatito",
       "topPick": false,
       "availability": "available",
-      "price": 4.64,
+      "price": 4.49,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709975_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709975_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=061%20Sprigatito%20Mega%20Evolution%20Promo&_sop=15"
@@ -699,7 +699,7 @@
       "name": "Fuecoco",
       "topPick": false,
       "availability": "available",
-      "price": 3.65,
+      "price": 3.82,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709976_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709976_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=062%20Fuecoco%20Mega%20Evolution%20Promo&_sop=15"
@@ -710,7 +710,7 @@
       "name": "Quaxly",
       "topPick": false,
       "availability": "available",
-      "price": 2.26,
+      "price": 2.46,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709977_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/709977_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=063%20Quaxly%20Mega%20Evolution%20Promo&_sop=15"
@@ -721,7 +721,7 @@
       "name": "Greninja ex",
       "topPick": false,
       "availability": "available",
-      "price": 0.5476,
+      "price": 0.5156,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713268_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713268_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=099%20Greninja%20ex%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
@@ -732,7 +732,7 @@
       "name": "Sylveon ex",
       "topPick": false,
       "availability": "available",
-      "price": 0.72,
+      "price": 0.7768,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713267_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713267_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=100%20Sylveon%20ex%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
@@ -743,7 +743,7 @@
       "name": "Nidorina",
       "topPick": false,
       "availability": "available",
-      "price": 1.2,
+      "price": 1.25,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713260_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713260_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=101%20Nidorina%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
@@ -754,7 +754,7 @@
       "name": "Nidorina (PC Stamp)",
       "topPick": false,
       "availability": "available",
-      "price": 48.32,
+      "price": 47.97,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713261_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713261_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=Nidorina%20101%2030th%20Celebration%20Pokemon%20Center%20Exclusive&_sop=15"
@@ -765,7 +765,7 @@
       "name": "Victini",
       "topPick": false,
       "availability": "available",
-      "price": 19.92,
+      "price": 19.97,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713286_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713286_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=102%20Victini%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
@@ -776,7 +776,7 @@
       "name": "Zeraora",
       "topPick": false,
       "availability": "available",
-      "price": 22.58,
+      "price": 22.56,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713285_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713285_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=103%20Zeraora%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
@@ -787,7 +787,7 @@
       "name": "Mewtwo",
       "topPick": true,
       "availability": "available",
-      "price": 13.11,
+      "price": 12.78,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713289_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713289_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=104%20Mewtwo%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
@@ -798,7 +798,7 @@
       "name": "Mew",
       "topPick": true,
       "availability": "available",
-      "price": 12.85,
+      "price": 12.96,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713288_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713288_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=105%20Mew%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
@@ -809,7 +809,7 @@
       "name": "Ditto",
       "topPick": true,
       "availability": "available",
-      "price": 14.26,
+      "price": 13.52,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713287_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713287_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=106%20Ditto%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
@@ -820,7 +820,7 @@
       "name": "Pikachu ex (Day)",
       "topPick": false,
       "availability": "available",
-      "price": 21.78,
+      "price": 22.51,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713257_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713257_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=107%20Pikachu%20ex%20(Day)%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
@@ -831,7 +831,7 @@
       "name": "Espeon ex",
       "topPick": false,
       "availability": "available",
-      "price": 34.15,
+      "price": 34.25,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713258_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713258_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=108%20Espeon%20ex%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
@@ -842,7 +842,7 @@
       "name": "Pikachu ex (Night)",
       "topPick": false,
       "availability": "available",
-      "price": 23.45,
+      "price": 23.1152,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713256_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713256_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=109%20Pikachu%20ex%20(Night)%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
@@ -853,14 +853,14 @@
       "name": "Umbreon ex",
       "topPick": false,
       "availability": "available",
-      "price": 62.39,
+      "price": 62.55,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713259_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/713259_200w.jpg",
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=110%20Umbreon%20ex%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
     }
   ],
   "total": 78,
-  "updatedAt": "2026-11-25T09:09:29.439Z",
-  "publishedAt": "2026-11-25T09:09:29.439Z",
+  "updatedAt": "2026-11-26T09:09:30.599Z",
+  "publishedAt": "2026-11-26T09:09:30.599Z",
   "version": "3.0.0"
 }
