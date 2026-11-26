@@ -5,7 +5,7 @@
       "number": "130/128",
       "name": "Moltres",
       "topPick": true,
-      "availability": "available",
+      "availability": "gifter-bid",
       "price": 2.6876,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716219_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716219_200w.jpg",
@@ -860,7 +860,7 @@
     }
   ],
   "total": 78,
-  "updatedAt": "2026-11-26T09:09:30.599Z",
-  "publishedAt": "2026-11-26T09:09:30.599Z",
+  "updatedAt": "2026-11-26T22:19:56.797Z",
+  "publishedAt": "2026-11-26T22:19:56.797Z",
   "version": "3.0.0"
 }
