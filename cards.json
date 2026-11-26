@@ -16,7 +16,7 @@
       "number": "133/128",
       "name": "Zapdos",
       "topPick": true,
-      "availability": "available",
+      "availability": "gifter-bid",
       "price": 2.2224,
       "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716221_in_1000x1000.jpg",
       "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716221_200w.jpg",
@@ -860,7 +860,7 @@
     }
   ],
   "total": 78,
-  "updatedAt": "2026-11-26T22:19:56.797Z",
-  "publishedAt": "2026-11-26T22:19:56.797Z",
+  "updatedAt": "2026-11-26T22:20:27.480Z",
+  "publishedAt": "2026-11-26T22:20:27.484Z",
   "version": "3.0.0"
 }
