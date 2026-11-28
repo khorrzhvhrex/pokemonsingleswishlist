@@ -35,17 +35,6 @@
     },
     {
       "subset": "Numbered Secret Rare",
-      "number": "141/128",
-      "name": "Galarian Meowth",
-      "topPick": false,
-      "availability": "ordered",
-      "price": 2.53,
-      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716226_in_1000x1000.jpg",
-      "imageFallbackUrl": "https://tcgplayer-cdn.tcgplayer.com/product/716226_200w.jpg",
-      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=141%2F128%20Galarian%20Meowth%20Pokemon%2030th%20Celebration&_sop=15"
-    },
-    {
-      "subset": "Numbered Secret Rare",
       "number": "147/128",
       "name": "Fuecoco ex",
       "topPick": false,
@@ -859,8 +848,8 @@
       "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=110%20Umbreon%20ex%2030th%20Celebration%20Mega%20Evolution%20Promo&_sop=15"
     }
   ],
-  "total": 78,
-  "updatedAt": "2026-11-27T09:09:22.624Z",
-  "publishedAt": "2026-11-27T09:09:22.624Z",
+  "total": 77,
+  "updatedAt": "2026-11-28T00:48:46.229Z",
+  "publishedAt": "2026-11-28T00:48:46.229Z",
   "version": "3.0.0"
 }
